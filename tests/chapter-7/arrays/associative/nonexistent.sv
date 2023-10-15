@@ -12,6 +12,7 @@
 :description: Test access to nonexistent associative array element
 :tags: 7.8.6 7.9.1
 :type: simulation elaboration parsing
+:unsynthesizable: 1
 */
 module top ();
 

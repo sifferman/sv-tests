@@ -11,6 +11,7 @@
 :name: dyn-arr-basic
 :description: Test dynamic arrays support
 :tags: 7.5
+:unsynthesizable: 1
 */
 module top ();
 

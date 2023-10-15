@@ -12,6 +12,7 @@
 :description: Test bounded queues support
 :tags: 7.10.5 7.10 7.10.2.7 7.10.2.1
 :type: simulation elaboration parsing
+:unsynthesizable: 1
 */
 module top ();
 

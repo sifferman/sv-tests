@@ -11,6 +11,7 @@
 :name: associative-arrays-string
 :description: Test associative arrays support
 :tags: 7.8.2 7.8
+:unsynthesizable: 1
 */
 module top ();
 

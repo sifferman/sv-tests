@@ -12,6 +12,7 @@
 :description: Test dynamic arrays operator delete support
 :tags: 7.5.3
 :type: simulation elaboration parsing
+:unsynthesizable: 1
 */
 module top ();
 

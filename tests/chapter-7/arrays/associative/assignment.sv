@@ -12,6 +12,7 @@
 :description: Test associative arrays assignment support
 :tags: 7.9.9 7.8
 :type: simulation elaboration parsing
+:unsynthesizable: 1
 */
 module top ();
 

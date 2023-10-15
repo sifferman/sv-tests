@@ -12,6 +12,7 @@
 :description: Test dynamic arrays operator new support
 :tags: 7.5.1
 :type: simulation elaboration parsing
+:unsynthesizable: 1
 */
 module top ();
 
