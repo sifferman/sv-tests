@@ -12,6 +12,7 @@
 :description: Test support of associative arrays methods (first)
 :tags: 7.9.4 7.9
 :type: simulation elaboration parsing
+:unsynthesizable: 1
 */
 module top ();
 
