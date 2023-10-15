@@ -30,10 +30,10 @@ endfunction
 
 initial
 	begin
-		$display(":assert: (%d == 1)", factorial(0));
-		$display(":assert: (%d == 1)", factorial(1));
-		$display(":assert: (%d == 2)", factorial(2));
-		$display(":assert: (%d == 120)", factorial(5));
-		$display(":assert: (%d == 39916800)", factorial(11));
+		$svt_assert("(%d == 1)", factorial(0));
+		$svt_assert("(%d == 1)", factorial(1));
+		$svt_assert("(%d == 2)", factorial(2));
+		$svt_assert("(%d == 120)", factorial(5));
+		$svt_assert("(%d == 39916800)", factorial(11));
 	end
 endmodule

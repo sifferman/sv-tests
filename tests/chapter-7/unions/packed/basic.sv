@@ -22,8 +22,8 @@ union packed {
 
 initial begin
 	un.v1 = 8'd140;
-	$display(":assert: (%d == 140)", un.v1);
-	$display(":assert: (%d == 140)", un.v2);
+	$svt_assert("(%d == 140)", un.v1);
+	$svt_assert("(%d == 140)", un.v2);
 end
 
 endmodule

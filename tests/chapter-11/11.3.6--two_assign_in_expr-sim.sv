@@ -25,8 +25,8 @@ initial begin
         c = a;
         e = b;
         d = ((b += (a+=1) + 1));
-        $display(":assert: (%d == %d)", b, (e+c+2));
-        $display(":assert: (%d == %d)", d, (e+c+2));
+        $svt_assert("(%d == %d)", b, (e+c+2));
+        $svt_assert("(%d == %d)", d, (e+c+2));
 end
 
 endmodule

@@ -21,10 +21,10 @@ logic [7:0] mem [0:255];
 
 initial begin
 	mem[5] = 0;
-	$display(":assert: (%d == 0)", mem[5]);
+	$svt_assert("(%d == 0)", mem[5]);
 
 	mem[5] = 5;
-	$display(":assert: (%d == 5)", mem[5]);
+	$svt_assert("(%d == 5)", mem[5]);
 end
 
 endmodule

@@ -17,7 +17,7 @@
 module top();
 
 initial begin
-	$display(":assert: (%d == 21)", $rtoi(21.37));
+	$svt_assert("(%d == 21)", $rtoi(21.37));
 end
 
 endmodule

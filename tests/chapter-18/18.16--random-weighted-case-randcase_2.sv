@@ -27,6 +27,6 @@ module top;
    int x;
    initial begin
       x = F(6);
-      $display(":assert: (10 == %d)", x);
+      $svt_assert("(10 == %d)", x);
    end
 endmodule

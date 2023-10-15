@@ -21,7 +21,7 @@ logic [63:0] c;
 
 initial begin
 	c = {>> 8 {a, b}};
-    $display(":assert: (((%d << 32) + %d) == %d) ", a, b, c);
+    $svt_assert("(((%d << 32) + %d) == %d) ", a, b, c);
 end
 
 endmodule

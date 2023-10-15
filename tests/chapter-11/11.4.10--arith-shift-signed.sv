@@ -22,8 +22,8 @@ initial begin
     b = (a <<< 3);
     c = (a >>> 3);
 
-    $display(":assert: (  64 == %d)", b);
-    $display(":assert: ( -15 == %d)", c);
+    $svt_assert("(  64 == %d)", b);
+    $svt_assert("( -15 == %d)", c);
 end
 
 endmodule

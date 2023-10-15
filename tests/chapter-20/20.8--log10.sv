@@ -17,7 +17,7 @@
 module top();
 
 initial begin
-	$display(":assert: (%d == 2)", $log10(100));
+	$svt_assert("(%d == 2)", $log10(100));
 end
 
 endmodule

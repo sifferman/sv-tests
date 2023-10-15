@@ -17,7 +17,7 @@
 module top();
 
 initial begin
-	$display(":assert: ('%s' == 'logic')", $typename(logic));
+	$svt_assert("('%s' == 'logic')", $typename(logic));
 end
 
 endmodule

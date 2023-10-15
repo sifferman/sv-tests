@@ -25,13 +25,13 @@ initial begin
     e = 8'b11011001;
     f = 8'b11011000;
 
-    $display(":assert: (0 == %d)", a == b);
-    $display(":assert: (0 == %d)", c == d);
-    $display(":assert: (0 == %d)", e == f);
+    $svt_assert("(0 == %d)", a == b);
+    $svt_assert("(0 == %d)", c == d);
+    $svt_assert("(0 == %d)", e == f);
 
-    $display(":assert: (0 == %d)", a === b);
-    $display(":assert: (0 == %d)", c === d);
-    $display(":assert: (0 == %d)", e === f);
+    $svt_assert("(0 == %d)", a === b);
+    $svt_assert("(0 == %d)", c === d);
+    $svt_assert("(0 == %d)", e === f);
 end
 
 endmodule

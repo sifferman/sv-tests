@@ -27,7 +27,7 @@ int b;
 initial begin
 	a = tagged Valid(42);
 	b = a.Valid;
-    $display(":assert: (42 == %d)", b);
+    $svt_assert("(42 == %d)", b);
 end
 
 endmodule

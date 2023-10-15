@@ -17,7 +17,7 @@
 module top();
 
 initial begin
-	$display(":assert: (%d == 3)", $sqrt(9));
+	$svt_assert("(%d == 3)", $sqrt(9));
 end
 
 endmodule

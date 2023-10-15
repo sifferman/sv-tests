@@ -17,7 +17,7 @@
 module top();
 
 initial begin
-	$display(":assert: (%f == 2)", $floor(2.1));
+	$svt_assert("(%f == 2)", $floor(2.1));
 end
 
 endmodule

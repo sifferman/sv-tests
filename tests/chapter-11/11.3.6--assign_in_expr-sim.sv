@@ -21,9 +21,9 @@ int c;
 
 initial begin
 	a = (b = (c = 5));	
-    $display(":assert: (5 == %d)", a);
-    $display(":assert: (5 == %d)", b);
-    $display(":assert: (5 == %d)", c);
+    $svt_assert("(5 == %d)", a);
+    $svt_assert("(5 == %d)", b);
+    $svt_assert("(5 == %d)", c);
 end
 
 endmodule

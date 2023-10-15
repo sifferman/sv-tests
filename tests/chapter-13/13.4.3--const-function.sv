@@ -22,6 +22,6 @@ function int fun(int val);
 endfunction
 
 initial
-	$display(":assert: (%d == 4)", a);
+	$svt_assert("(%d == 4)", a);
 
 endmodule

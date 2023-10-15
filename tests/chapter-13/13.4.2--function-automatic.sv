@@ -23,10 +23,10 @@ endfunction
 
 initial
 	begin
-		$display(":assert: (%d == 5)", add(5));
-		$display(":assert: (%d == 5)", add(5));
-		$display(":assert: (%d == 5)", add(5));
-		$display(":assert: (%d == 5)", add(5));
+		$svt_assert("(%d == 5)", add(5));
+		$svt_assert("(%d == 5)", add(5));
+		$svt_assert("(%d == 5)", add(5));
+		$svt_assert("(%d == 5)", add(5));
 	end
 
 endmodule

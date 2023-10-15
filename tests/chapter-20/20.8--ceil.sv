@@ -17,7 +17,7 @@
 module top();
 
 initial begin
-	$display(":assert: (%f == 4)", $ceil(3.7));
+	$svt_assert("(%f == 4)", $ceil(3.7));
 end
 
 endmodule

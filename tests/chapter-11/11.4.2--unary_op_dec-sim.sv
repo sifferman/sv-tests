@@ -19,7 +19,7 @@ int a = 12;
 
 initial begin
 	a--;
-    $display(":assert: (11 == %d)", a);
+    $svt_assert("(11 == %d)", a);
 end
 
 endmodule

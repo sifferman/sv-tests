@@ -18,7 +18,7 @@ module top();
 
 initial begin
 	logic [31:0] val;
-	$display(":assert: (%d == 32)", $bits(val));
+	$svt_assert("(%d == 32)", $bits(val));
 end
 
 endmodule

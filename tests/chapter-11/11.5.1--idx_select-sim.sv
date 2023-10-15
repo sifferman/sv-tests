@@ -21,8 +21,8 @@ logic c;
 initial begin
 	b = a[12];
 	c = a[5];
-    $display(":assert: (1 == %d)", b);
-    $display(":assert: (0 == %d)", c);
+    $svt_assert("(1 == %d)", b);
+    $svt_assert("(0 == %d)", c);
 end
 
 endmodule

@@ -19,8 +19,8 @@ reg [3:0] b;
 initial begin
     a = 4'd12;
     b = 4'd5;
-    $display(":assert: (12 == %d)", a);
+    $svt_assert("(12 == %d)", a);
     a = b;
-    $display(":assert: (5 == %d)", a);
+    $svt_assert("(5 == %d)", a);
 end
 endmodule

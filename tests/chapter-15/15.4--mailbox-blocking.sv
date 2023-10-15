@@ -24,9 +24,9 @@ initial begin
 	m = new();
 	m.put(msg);
 	m.peek(r_peek);
-	$display(":assert: (%d == 1)", m.num());
+	$svt_assert("(%d == 1)", m.num());
 	m.get(r);
-	$display(":assert: ('%s' == '%s')", r, r_peek);
+	$svt_assert("('%s' == '%s')", r, r_peek);
 end
 
 endmodule

@@ -22,7 +22,7 @@ int c;
 initial begin
         c = a;
         b = (++a);
-        $display(":assert: (%d == %d)", b, (c+1));
+        $svt_assert("(%d == %d)", b, (c+1));
 end
 
 endmodule

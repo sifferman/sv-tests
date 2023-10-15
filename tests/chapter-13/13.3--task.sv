@@ -16,10 +16,10 @@
 module top();
 
 task mytask;
-	$display(":assert: True");
+	$svt_assert("1");
 endtask
 
-initial 
+initial
 	mytask;
 
 endmodule

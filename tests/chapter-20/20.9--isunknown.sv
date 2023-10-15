@@ -21,10 +21,10 @@ initial begin
 	parameter [3:0] val1 = 4'b000z;
 	parameter [3:0] val2 = 4'b00xz;
 	parameter [3:0] val3 = 4'b0000;
-	$display(":assert: (%d == 1)", $isunknown(val0));
-	$display(":assert: (%d == 1)", $isunknown(val1));
-	$display(":assert: (%d == 1)", $isunknown(val2));
-	$display(":assert: (%d == 0)", $isunknown(val3));
+	$svt_assert("(%d == 1)", $isunknown(val0));
+	$svt_assert("(%d == 1)", $isunknown(val1));
+	$svt_assert("(%d == 1)", $isunknown(val2));
+	$svt_assert("(%d == 0)", $isunknown(val3));
 end
 
 endmodule

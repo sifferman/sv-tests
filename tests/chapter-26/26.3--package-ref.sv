@@ -24,6 +24,6 @@ endpackage : mypkg
 
 module top();
 
-initial $display(":assert: (%d == 4)", mypkg::add(1, 3));
+initial $svt_assert("(%d == 4)", mypkg::add(1, 3));
 
 endmodule

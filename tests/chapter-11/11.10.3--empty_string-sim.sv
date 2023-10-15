@@ -19,7 +19,7 @@ bit [8*14:1] a;
 
 initial begin
 	a = "";
-    $display(":assert: (1 == %d)", a == 0);
+    $svt_assert("(1 == %d)", a == 0);
 end
 
 endmodule

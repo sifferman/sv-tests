@@ -21,7 +21,7 @@ int c;
 
 initial begin
 	c = (a > b) ? 11 : 13;
-    $display(":assert: (11 == %d)", c);
+    $svt_assert("(11 == %d)", c);
 end
 
 endmodule

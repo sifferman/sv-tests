@@ -19,7 +19,7 @@ logic signed [7:0] a;
 
 initial begin
 	a = $signed(4'b1000);
-    $display(":assert: (-8 == %d)", a);
+    $svt_assert("(-8 == %d)", a);
 end
 
 endmodule

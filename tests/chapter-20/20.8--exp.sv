@@ -17,7 +17,7 @@
 module top();
 
 initial begin
-	$display(":assert: (%f > 2.718) and (%f < 2.719)", $exp(1), $exp(1));
+	$svt_assert("(%f > 2.718) and (%f < 2.719)", $exp(1), $exp(1));
 end
 
 endmodule

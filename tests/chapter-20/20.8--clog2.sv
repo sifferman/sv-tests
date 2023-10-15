@@ -17,7 +17,7 @@
 module top();
 
 initial begin
-	$display(":assert: (%d == 5)", $clog2(32));
+	$svt_assert("(%d == 5)", $clog2(32));
 end
 
 endmodule

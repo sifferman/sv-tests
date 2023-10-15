@@ -21,13 +21,13 @@ logic c = 0;
 logic d;
 
 function int fun(logic a);
-    $display(":assert: (False)");
+    $svt_assert("0");
 	return a;
 endfunction
 
 initial begin
     d = a && (b || fun(c));
-    $display(":assert: (1 == %d)", d);
+    $svt_assert("(1 == %d)", d);
 end
 
 endmodule

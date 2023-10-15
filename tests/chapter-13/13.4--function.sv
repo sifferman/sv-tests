@@ -20,6 +20,6 @@ function int test(int val);
 endfunction
 
 initial
-	$display(":assert: (%d == 2)", test(1));
+	$svt_assert("(%d == 2)", test(1));
 
 endmodule

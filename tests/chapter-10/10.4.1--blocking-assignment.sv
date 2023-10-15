@@ -21,7 +21,7 @@ logic b = 2;
 initial begin
 	a = 1;
 	b = a;
-	$display(":assert: (%d == %d)", a, b);
+	$svt_assert("(%d == %d)", a, b);
 end
 
 endmodule

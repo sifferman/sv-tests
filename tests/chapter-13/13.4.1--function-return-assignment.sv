@@ -20,6 +20,6 @@ function int add(int a, int b);
 endfunction
 
 initial
-	$display(":assert: (%d == 90)", add(30, 60));
+	$svt_assert("(%d == 90)", add(30, 60));
 
 endmodule

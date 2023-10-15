@@ -17,7 +17,7 @@
 module top();
 
 initial begin
-	$display(":assert: (%f == 20.0)", $itor(20));
+	$svt_assert("(%f == 20.0)", $itor(20));
 end
 
 endmodule

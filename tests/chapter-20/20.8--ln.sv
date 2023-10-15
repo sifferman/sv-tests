@@ -17,7 +17,7 @@
 module top();
 
 initial begin
-	$display(":assert: (%d == 0)", $ln(1));
+	$svt_assert("(%d == 0)", $ln(1));
 end
 
 endmodule

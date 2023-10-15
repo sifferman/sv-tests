@@ -17,7 +17,7 @@
 module top();
 
 initial begin
-	$display(":assert: (%f == 12.45)", $bitstoreal($realtobits(12.45)));
+	$svt_assert("(%f == 12.45)", $bitstoreal($realtobits(12.45)));
 end
 
 endmodule

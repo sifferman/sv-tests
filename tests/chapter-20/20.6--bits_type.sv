@@ -22,7 +22,7 @@ typedef struct packed {
 } mystruct;
 
 initial begin
-	$display(":assert: (%d == 9)", $bits(mystruct));
+	$svt_assert("(%d == 9)", $bits(mystruct));
 end
 
 endmodule

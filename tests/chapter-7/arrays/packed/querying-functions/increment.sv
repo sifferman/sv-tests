@@ -18,7 +18,7 @@ module top ();
 bit [7:0] arr;
 
 initial begin
-	$display(":assert: (%d == 1)", $increment(arr));
+	$svt_assert("(%d == 1)", $increment(arr));
 end
 
 endmodule

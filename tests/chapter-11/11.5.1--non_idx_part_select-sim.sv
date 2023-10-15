@@ -19,7 +19,7 @@ logic [3:0] b;
 
 initial begin
 	b = a[11:8];
-    $display(":assert: (2 == %d)", b);
+    $svt_assert("(2 == %d)", b);
 end
 
 endmodule

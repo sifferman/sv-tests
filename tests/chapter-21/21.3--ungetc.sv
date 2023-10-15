@@ -20,7 +20,7 @@ int fd;
 initial begin
 	fd = $fopen("tmp.txt", "w");
 	$ungetc(123, fd);
-	$display(":assert: (%d == %d)", 123, $fgetc(fd));
+	$svt_assert("(%d == %d)", 123, $fgetc(fd));
 end
 
 final
